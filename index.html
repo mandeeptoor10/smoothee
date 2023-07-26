@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <input type="text" id="newTodo" placeholder="Type a new to-do item">
+        <button id="addTodo">Add</button>
+        <ul id="todoList">
+            <!-- To-do items will be dynamically added here -->
+        </ul>
+    </div>
+    <h1>Smoothie Order Form</h1>
+    <form id="smoothieOrderForm">
+        <label for="flavor">Select a flavor:</label>
+        <select id="flavor" name="flavor">
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+            <!-- Add more options here -->
+        </select><br>
+
+        <label for="size">Select a size:</label>
+        <input type="radio" id="small" name="size" value="small" checked>
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large</label><br>
+
+        <label for="extras">Extras (optional):</label>
+        <input type="checkbox" id="protein" name="extras" value="protein">
+        <label for="protein">Protein</label>
+        <input type="checkbox" id="honey" name="extras" value="honey">
+        <label for="honey">Honey</label>
+        <input type="checkbox" id="spinach" name="extras" value="spinach">
+        <label for="spinach">Spinach</label>
+        <!-- Add more options here -->
+
+        <br><br>
+        <input type="submit" value="Order">
+    </form>
+    
+
+    <div id="smoothieOutput"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
